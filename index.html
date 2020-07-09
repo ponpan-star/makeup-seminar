@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自分を知って大変身|メイクアップセミナー</title>
+<meta name="description" content="メイクアップのプロが1人1人の骨格に合わせたテクニックを教えるセミナーです。">
+<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <!-------- ヘッダ－ -------->
+  <header>
+    <h1><img src="./img/header-logo.svg" alt="Bellezza"></h1>
+  </header>
+
+  <!-------- メイン -------->
+  <main>
+    <!-------- メインビジュアル -------->
+    <div class="mv-area">
+      <img src="./img/main-image.jpg" alt="自分を知って大変身！メイクアップセミナー">
+    </div>
+
+    <!-------- コンセプト -------->
+    <section>
+      <div class="section-inner">
+        <h2>コンセプト</h2>
+        <div class="title-line"></div>
+        <h3>コンプレックス解消！自分だけのメイクで変身しよう</h3>
+        <p class="concept-text">
+          セルフメイクではなかなか気づかない、1人1人の骨格に合わせたメイクを、プロのテクニックをまじえて伝授します！
+        </p>
+      </div>
+    </section>
+
+    <!-------- おすすめ -------->
+    <section>
+      <div class="section-inner">
+        <h2>こんな方におすすめ</h2>
+        <div class="title-line"></div>
+        <ul>
+          <li>セルフメイクがうまくできない</li>
+          <li>雑誌の真似をしてみても、自分には似合わない</li>
+          <li>自分だけに合うメイクを知りたい</li>
+          <li>プロの技を習ってみたい</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-------- 講師 -------->
+    <section>
+      <div class="section-inner">
+        <h2>講師紹介</h2>
+        <div class="title-line"></div>
+        <div class="two-colum">
+          <div class="colom-left">
+            <h3 class="teacher-name">山田　真知子</h3>
+            <p>元美容部員。<br>仕事の傍らセルフメイクを研究。友達に披露したところ口コミで広がり、5年前から個人レッスンを開始。<br>骨格に合わせたメイクアップを得意としている。</p>
+          </div>
+          <div class="colom-right">
+            <img class="teacher-img" src="./img/teacher.jpg" alt="山田真知子">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------- スケジュール -------->
+    <section>
+      <div class="section-inner">
+        <h2>当日のスケジュール</h2>
+        <div class="title-line"></div>
+        <p class="schedule-text">
+          日時：2020年7月8日(水) 14:00~15:30<br>
+          場所：セントラルビル5F(東京都〇〇区〇〇120-5)<br>
+          受講料：3,000円<br>
+          定員：30名(先着順)
+        </p>
+        <table class="schedule-time">
+          <tr>
+            <th>14:00~14:05</th>
+            <td>講師紹介</td>
+          </tr>
+          <tr>
+            <th>14:05~14:30</th>
+            <td>メイクの基礎について</td>
+          </tr>
+          <tr>
+            <th>14:30~15:00</th>
+            <td>自分の顔を知ろう</td>
+          </tr>
+          <tr>
+            <th>15:00~15:30</th>
+            <td>セルフメイクにチャレンジ</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-------- 申し込み -------->
+    <section>
+      <div class="section-inner">
+        <h2>申し込みフォーム</h2>
+        <div class="title-line"></div>
+        <form action="program.php" method="POST">
+          <dl>
+            <dt><label for="user-name">氏名</label></dt>
+            <dd><input name="user-name" id="user-name" type="text"></dd>
+            <dt><label for="user-email">メールアドレス</label></dt>
+            <dd><input name="user-email" id="user-email" type="email"></dd>
+            <dt>年齢</dt>
+            <dd>
+              <input type="radio" name="age" value="20代" id="20">
+              <label for="swim-yes">20代</label>
+              <input type="radio" name="age" value="30代" id="30">
+              <label for="swim-yes">30代</label>
+              <input type="radio" name="age" value="40代" id="40">
+              <label for="swim-yes">40代</label>
+              <input type="radio" name="age" value="50代" id="50">
+              <label for="swim-yes">50代</label>
+              <input type="radio" name="age" value="60代" id="60">
+              <label for="swim-yes">60代～</label>
+            </dd>
+            <dt><label for="comment">備考</label></dt>
+            <dd><textarea name="comment" id="comment" cols="60" rows="8"></textarea></dd>
+          </dl>
+          <div class="form-submit">
+            <button name="submit" id="submit" type="submit">申し込む</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-------- 画像 -------->
+    <div class="form-img-area">
+      <img src="./img/photo_02.jpg" alt="花の写真">
+    </div>
+  </main>
+  <!-------- フッター -------->
+  <footer>
+    <address>
+      運営会社：Bellezza<br>
+      〒000-0000<br>
+      東京都〇〇区〇〇1丁目000<br>
+      00-0000-0000
+    </address>
+    <small>© copyright 2020 Bellezza</small>
+  </footer>
+</body>
+</html>
